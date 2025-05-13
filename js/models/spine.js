@@ -75,7 +75,9 @@ var Spine = function(epubPackage, spineDTO) {
     };
 
     function isValidLinearItem(item) {
-        return !_handleLinear || item.linear !== "no";
+        // NLNZ customisation to show the epub cover when linear is 'no'
+        return true;
+        // return !_handleLinear || item.linear !== "no";
     }
 
     /**
